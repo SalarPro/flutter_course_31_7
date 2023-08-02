@@ -1,9 +1,10 @@
-import 'package:first_app/first_screen.dart';
+import 'package:first_app/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
         appBarTheme: AppBarTheme(
@@ -12,7 +13,7 @@ void main() {
           foregroundColor: Colors.white,
         ),
       ),
-      home: FirstScreen(),
+      home: LoginScreen(),
     ),
   );
 }
