@@ -17,6 +17,8 @@ class _FirstScreenState extends State<FirstScreen> {
         title: Text(
           "First App",
         ),
+        centerTitle: true,
+        
       ),
       body: Container(
         width: double.infinity,
@@ -45,13 +47,14 @@ class _FirstScreenState extends State<FirstScreen> {
             ),
             FlutterLogo(size: 200),
             ElevatedButton(
-                onPressed: () {
-
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SecondScreen()));
-                      
-                },
-                child: Text("Open second screen"))
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SecondScreen()));
+              },
+              child: Text(
+                "Open second screen",
+              ),
+            ),
           ],
         ),
       ),
